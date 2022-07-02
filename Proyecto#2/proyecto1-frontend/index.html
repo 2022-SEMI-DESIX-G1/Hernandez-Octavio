@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <title>Pokemon Api</title>
+
+</head>
+<body>
+    <section class="container">
+        <form class="form pokemon-form" action="">
+            <div class="form_content">
+                <div class="header-content">
+                    <div class="header_balls">
+                       <div class="circle-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-satellite" width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" />
+                            <path d="M6 10l-3 3l3 3l3 -3" />
+                            <path d="M10 6l3 -3l3 3l-3 3" />
+                            <line x1="12" y1="12" x2="13.5" y2="13.5" />
+                            <path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5" />
+                            <path d="M15 21a6 6 0 0 0 6 -6" />
+                          </svg>
+                       </div>
+                       <div class="circle"></div>
+                       <div class="circle"></div>
+                       <div class="circle"></div>
+                    </div>
+                    <div class="header-logo">
+                        <img src="img/Poké_Ball_icon.svg.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex d-between ">
+                    <h1 class="form_title">BUSCADOR DE POKEMONES</h1>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+               <!-- <p class="form_paragraph">Conoce toda la información de los pokemones en un solo lugar.</p>-->
+                <div class="d-flex d-between">
+                   <label for="" class="title">Selecciona: </label>
+                   <div class="d-flex container_checkbox">
+                        <div>
+                            <input type="checkbox" name="" id="sprites" class="checkbox" >
+                            <label for="">Sprites</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="locations">
+                            <label for="">Ubicación</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="evolutions" placeholder="Pikachu" autocomplete="on">
+                            <label for="">Cadena de Evolución</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form_section">
+                        <input class="form_input text-input" id="pokemon-input" type="text">
+                        <button class="btn btn-sumit" type="submit">Buscar</button>
+                </div>
+            </div>
+        </form>
+        <!-- Card Pokemon Information-->
+        <div class="form card" id="pokemon-finder-respose"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
